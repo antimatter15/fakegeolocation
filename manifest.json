@@ -1,9 +1,9 @@
 {
-  "name": "Hide Elements",
-  "version": "1.1",
-  "description": "Hide elements using the context menu.",
+  "name": "Fake Geolocation",
+  "version": "1.0",
+  "description": "Allow faking of HTML5 geolocation.",
   "permissions": [
-    "contextMenus"
+    "geolocation",
   ],
   "background_page": "background.html",
   "icons": {
@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["hide_listener.js"]
+      "js": ["geofake.js"]
     }
   ]
 }
